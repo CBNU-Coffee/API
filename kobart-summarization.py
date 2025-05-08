@@ -1,9 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Fri May  9 00:08:56 2025
 
-@author: 김성령
-"""
 from transformers import PreTrainedTokenizerFast, BartForConditionalGeneration
 
 tokenizer = PreTrainedTokenizerFast.from_pretrained('gogamza/kobart-base-v2')
