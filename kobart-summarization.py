@@ -1,3 +1,22 @@
+#전체 변수
+#변수명	설명
+#tokenizer	문장을 토큰화하고 ID로 변환
+#model	요약 모델
+#article	뉴스 기사 원문
+#input_ids	article을 토크나이저로 토큰화하고 PyTorch 텐서로 변환한 입력값
+#summary_ids	요약 결과의 ID 시퀀스
+#summary	최종 요약 결과
+
+#generate()에 사용된 인자 변수
+#인자명	의미
+#input_ids	요약할 입력 문장의 토큰 ID 텐서
+#max_length	 생성할 요약 문장의 최대 토큰 수
+#min_length	 생성할 요약 문장의 최소 토큰 수
+#num_beams	beam search 사용 시 고려할 후보 수
+#length_penalty	문장 길이에 대한 penalty
+#repetition_penalty	반복되는 문장을 피하도록 유도
+#no_repeat_ngram_size	단어가 반복되지 않도록 제한
+#early_stopping	적절한 시점에 요약 생성을 멈춤
 
 from transformers import PreTrainedTokenizerFast, BartForConditionalGeneration
 
